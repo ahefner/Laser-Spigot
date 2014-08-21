@@ -1,0 +1,8 @@
+*.fas
+*.fasl
+#*
+*~
+errlog.txt
+*.o
+laser-spigot
+obj/
