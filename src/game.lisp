@@ -41,10 +41,10 @@
    (depth      :initarg :depth :initform 2)))
 
 (defun level-from-terrain (terrain)
-  (make-instance 'level 
+  (make-instance 'level
                  :terrain terrain
                  :affinity (map-matrix terrain (constantly 0))
-                 :ent-map  (map-matrix terrain (constantly nil))                 
+                 :ent-map  (map-matrix terrain (constantly nil))
                  :item-map (map-matrix terrain (constantly nil))
                  :charge   (map-matrix terrain (constantly 4))
                  :function-map (map-matrix terrain (constantly nil))))
@@ -107,7 +107,7 @@
    :components (robot-components
                 '("sensory apparatus"  3  2)
                 '("motivator"         10  4)
-                '("chasis"            20  5 :critical t)
+                '("chassis"           20  5 :critical t)
                 '("manipulator"        7  3)
                 '("CPU"                1  1 :critical t))))
 

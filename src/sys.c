@@ -9,7 +9,7 @@
 SDL_Surface *window_surface;
 int window_width = 0;
 int window_height = 0;
-int vid_fullscreen = 1;
+int vid_fullscreen = 0;
 static char *apptitle = NULL;
 
 /* WIN32 FIXME! We can't depend on textures (and shaders, etc.) surviving a call to SDL_SetVideoMode! */
