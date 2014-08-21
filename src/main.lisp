@@ -51,7 +51,7 @@
 
 (defun main ()
   ;; Disable goddamned floating point traps.
-  (ext:trap-fpe 'floating-point-underflow nil)
+  (si:trap-fpe 'floating-point-underflow nil)
 
   (cond
     (*devmode* (%main))

@@ -231,7 +231,7 @@ for comparison. Accepts and produces only lists."
 (defun source-names->object-names (sources)
   (mapcar #'object-pathname sources))
 
-(c:build-program #+win32 "g1.exe" #-win32 "g1"
+(c:build-program #+win32 "laserspigot.exe" #-win32 "laser-spigot"
                   :lisp-files (source-names->object-names (lisp-linked-sources))
                   :ld-flags (append (mapcar #'namestring (source-names->object-names (c-sources)))
 				    (ld-flags)
